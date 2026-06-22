@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Graphics Design Portfolio</title>
+    <style>
+        /* --- CSS STYLES (This makes it look good) --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #1a1a1a;
+            border-bottom: 2px solid #bb86fc; /* Purple accent line */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            color: #bb86fc; /* Purple accent color */
+        }
+
+        header p {
+            color: #b3b3b3;
+            font-size: 1.2em;
+        }
+
+        /* The Grid Layout for Posters */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual Poster Cards */
+        .poster-card {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .poster-card:hover {
+            transform: translateY(-10px); /* Makes the card float up when you hover over it */
+        }
+
+        .poster-card img {
+            width: 100%;
+            height: 400px; 
+            object-fit: cover; /* Keeps your posters from stretching weirdly */
+            display: block;
+        }
+
+        .description {
+            padding: 20px;
+        }
+
+        .description h3 {
+            margin: 0 0 10px 0;
+            color: #03dac6; /* Teal accent color for titles */
+            font-size: 1.5em;
+        }
+
+        .description p {
+            margin: 0;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- --- HTML CONTENT (This is the actual text and images) --- -->
+    <header>
+        <h1>NASHA-BIT GFX</h1>
+        <p>A collection of my custom poster designs and graphics.</p>
+    </header>
+
+    <main class="gallery">
+        
+        <!-- POSTER 1 -->
+        <div class="poster-card">
+            <img src="poster1.png" alt="My First Poster">
+            <div class="description">
+                <h3>Neon Cyberpunk Poster</h3>
+                <p>A futuristic poster design I created using Photoshop. I focused on glowing lighting effects and bold typography.</p>
+            </div>
+        </div>
+
+        <!-- POSTER 2 -->
+        <div class="poster-card">
+            <img src="poster2.png" alt="My Second Poster">
+            <div class="description">
+                <h3>Minimalist Event Flyer</h3>
+                <p>A clean, minimalist design made for a local music event. I used negative space to draw attention to the text.</p>
+            </div>
+        </div>
+
+        <!-- POSTER 3 -->
+        <div class="poster-card">
+            <img src="poster3.png" alt="My Third Poster">
+            <div class="description">
+                <h3>Retro Vintage Advertisement</h3>
+                <p>An experimental design inspired by 90s graphics, utilizing custom textures and halftone patterns.</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
